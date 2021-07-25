@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Rockness";
+    src: url("../fonts/rockness/Rockness.ttf") format(ttf);
+    src: url("../fonts/rockness/Rockness.otf") format(otf);
+}
+
+@font-face {
+    font-family: "Chakra Petch";
+    src: url("../fonts/Chakra_Petch/ChakraPetch-Bold.ttf") format(ttf);
+    src: url("../fonts/Chakra_Petch/ChakraPetch-BoldItalic.ttf") format(ttf);
+    src: url("../fonts/Chakra_Petch/ChakraPetch-Italic.ttf") format(ttf);
+    src: url("../fonts/Chakra_Petch/ChakraPetch-Light.ttf") format(ttf);
+    src: url("../fonts/Chakra_Petch/ChakraPetch-MediumItalic.ttf") format(ttf);
+    src: url("../fonts/Chakra_Petch/ChakraPetch-Regular.ttf") format(ttf);
+    src: url("../fonts/Chakra_Petch/ChakraPetch-SemiBold.ttf") format(ttf);
+    src: url("../fonts/Chakra_Petch/ChakraPetch-SemiBoldItalic.ttf") format(ttf);
+}
+
+* {
+    background-color: black;
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    border: 2px solid black;
+    height: 800px;
+}
+
+/*========================================================HEADER===========================================================================*/
+
+.header {
+    border-bottom: 4px solid goldenrod;
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+}
+
+.logoH {
+    float: left;
+    padding: 0px 30px;
+}
+
+.logoH h1 {
+    color: goldenrod;
+    font-family: 'Rockness';
+    font-size: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav li {
+    margin-top: 18px;
+    float: right;
+    text-align: center;
+    width: 8%;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    padding: 6px 2px;
+}
+
+nav a:hover {
+    color: gold;
+    border-bottom: 2px solid #E5BF34;
+}
+
+/*========================================================ABOUT===========================================================================*/
+
+.about_jiaby {
+    padding-top: 50px;
+}
+
+.about_jiaby h1 {
+    text-align: center;
+    color: goldenrod;
+}
+
+.about_right {
+    float: right;
+    border-left: 4px solid goldenrod;
+    width: 69%;
+    height: 500px;
+    padding-left: 10px;
+}
+
+.about_right h1,
+p {
+    text-align: left;
+    color: white;
+    padding-top: 30px;
+}
+
+.about_right h1 {
+    font-size: 50px;
+}
+
+.about_right p {
+    font-size: 24px;
+}
+
+.about_left {
+    float: left;
+    padding-left: 50px;
+    width: 25%;
+}
+
+.about_left img {
+    border-radius: 2.5%;
+    height: 500px;
+}
+
+/*BOUTTON*/
+
+
+/*========================================================PROJET===========================================================================*/
+
+
+/*========================================================CONTACT===========================================================================*/
+
+
+/*========================================================FOOTER===========================================================================*/
+.footer {
+    clear: both;
+    border: 2px solid violet;
+    height: 100px;
+}
