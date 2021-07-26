@@ -19,12 +19,12 @@
 * {
     background-color: black;
     font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
     margin: 0px;
     padding: 0px;
 }
 
 .container {
-    border: 2px solid black;
     height: 800px;
 }
 
@@ -64,7 +64,7 @@ nav li {
     margin-top: 18px;
     float: right;
     text-align: center;
-    width: 8%;
+    width: 10%;
 }
 
 nav a {
@@ -72,23 +72,33 @@ nav a {
     text-decoration: none;
     color: #fff;
     border-bottom: 2px solid transparent;
-    padding: 6px 2px;
+    padding: 9px 2px;
 }
 
 nav a:hover {
     color: gold;
-    border-bottom: 2px solid #E5BF34;
+    display: block;
+    border-top: 4px solid goldenrod;
+    border-right: 4px solid goldenrod;
+    border-left: 4px solid goldenrod;
+    position: absolute;
+    padding: 5px 30px 30px 30px;
+    /*padding: top right bottom left*/
+    border-radius: 5%;
+
 }
 
 /*========================================================ABOUT===========================================================================*/
 
 .about_jiaby {
     padding-top: 50px;
+    padding-bottom: 500px;
 }
 
 .about_jiaby h1 {
     text-align: center;
     color: goldenrod;
+    font-size: 50px;
 }
 
 .about_right {
@@ -127,12 +137,150 @@ p {
 
 /*BOUTTON*/
 
+.download a {
+    display: block;
+    width: 200px;
+    border: 2px solid goldenrod;
+    border-radius: 2em;
+    text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 3%;
+    margin-left: 4%;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+.download a:hover {
+    color: black;
+    background-color: goldenrod;
+}
 
 /*========================================================PROJET===========================================================================*/
+.projet {
+    clear: both;
+}
+.projet h1 {
+    text-align: center;
+    color: goldenrod;
+    font-size: 50px;
+}
 
+.dino-card {
+    border: 1px solid goldenrod;
+    margin: 30px 40px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.dino-avatar {
+    max-width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: #004e66;
+    margin-right: 40px;
+}
+
+.dino-name {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.dino-button {
+    display: block;
+    width: 200px;
+    border: 2px solid goldenrod;
+    border-radius: 2em;
+    text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 3%;
+    margin-left: 4%;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+.dino-button:hover {
+    color: black;
+    background-color: goldenrod;
+}
+
+.dino-card-footer {
+    border-top: 2px solid goldenrod;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.food-item {
+    display: inline-block;
+    margin-right: 15px;
+    color: goldenrod;
+}
+
+/* ---- Flexbox ---- */
+
+.valley-content {
+    flex-direction: column;
+    flex: 1;
+}
+
+.dino-card {
+    display: flex;
+}
+
+.dino-avatar {
+    flex: 1;
+}
+
+.dino-info {
+    flex: 2;
+}
+
+.dino-button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.dino-card-footer {
+    justify-content: space-in-between;
+}
+
+.dino-card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dino-button {
+    margin-left: auto;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+    .dino-card {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 1025px) {}
 
 /*========================================================CONTACT===========================================================================*/
 
+.contact {
+    clear: both;
+    border: 2px solid blue;
+    height: 100px;
+}
 
 /*========================================================FOOTER===========================================================================*/
 .footer {
