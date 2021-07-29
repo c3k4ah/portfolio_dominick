@@ -35,7 +35,7 @@
     height: 80px;
     width: 100%;
     margin: 0 auto;
-    position: sticky;
+    position: absolute;
     top: 0;
 }
 
@@ -91,8 +91,8 @@ nav a:hover {
 /*========================================================ABOUT===========================================================================*/
 
 .about_jiaby {
-    padding-top: 50px;
-    padding-bottom: 500px;
+    padding: 150px 50px 50px 0px;
+    text-align: center;
 }
 
 .about_jiaby h1 {
@@ -106,7 +106,6 @@ nav a:hover {
     border-left: 4px solid goldenrod;
     width: 69%;
     height: 500px;
-    padding-left: 10px;
 }
 
 .about_right h1,
@@ -120,8 +119,11 @@ p {
     font-size: 50px;
 }
 
-.about_right p {
+.about_right .decri p {
+    text-align: center;
+    width: 850px;
     font-size: 24px;
+    justify-content: space-between;
 }
 
 .about_left {
@@ -161,7 +163,9 @@ p {
 /*========================================================PROJET===========================================================================*/
 .projet {
     clear: both;
+    padding: 50px 50px 50px 0px;
 }
+
 .projet h1 {
     text-align: center;
     color: goldenrod;
@@ -275,15 +279,56 @@ p {
 @media (min-width: 1025px) {}
 
 /*========================================================CONTACT===========================================================================*/
+.contact h1 {
+    text-align: center;
+    color: goldenrod;
+    font-size: 50px;
+}
 
-.contact {
-    clear: both;
-    border: 2px solid blue;
-    height: 100px;
+#send {
+    display: block;
+    width: 200px;
+    border: 2px solid goldenrod;
+    border-radius: 2em;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 3%;
+    margin-left: 38%;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+#send:hover {
+    color: black;
+    background-color: goldenrod;
+}
+
+input,
+textarea {
+    width: 800px;
+    border-bottom: 1px solid gold;
+    outline: 0;
+    padding: 1em;
+    text-decoration: none;
+    background: transparent;
+}
+
+input,textarea:focus{
+    color: goldenrod;
+}
+.bord{
+    margin: 5% 14% 5% 20%;
+    padding: 20px;
+    border: solid 6px goldenrod;
+    border-width: 2px;
+    border-radius: 2em;
 }
 
 /*========================================================FOOTER===========================================================================*/
 .footer {
+    padding: 50px 50px 50px 0px;
     clear: both;
     border: 2px solid violet;
     height: 100px;
