@@ -309,10 +309,11 @@ input,
 textarea {
     width: 800px;
     border-bottom: 1px solid gold;
-    outline: 0;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    outline: none;
     padding: 1em;
-    text-decoration: none;
-    background: transparent;
 }
 
 input,
@@ -321,10 +322,9 @@ textarea:focus {
 }
 
 .bord {
-    margin: 5% 14% 5% 20%;
+    margin: 5% 18% 5% 17%;
     padding: 20px;
-    border: solid 6px goldenrod;
-    border-width: 2px;
+    border: solid 2px goldenrod;
     border-radius: 2em;
 }
 
@@ -382,6 +382,19 @@ textarea:focus {
     padding-right: 5px !important;
 }
 
+.fab {
+  font-size: 30px;
+}
+
+.fa-facebook {
+    color: #0084ff;
+}
+.fa-youtube{
+    color:  red;
+}
+.fa-linkedin{
+    color:  #0077b5;
+}
 .footer .col ul li:hover {
     color: goldenrod;
     transition: .1s;
